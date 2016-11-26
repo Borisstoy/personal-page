@@ -2780,3 +2780,21 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 1133ms (Views: 1038.0ms | ActiveRecord: 9.4ms)
 
 
+Started GET "/" for ::1 at 2016-11-26 20:34:08 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 20:34:09 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+

@@ -1,0 +1,23 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 homepage_content about ">
+		<h2>About</h2>
+		<hr>
+		<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p><p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to <a href="#"> pursue pleasure</a> rationally encounter consequences that are extremely painful</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Articles</h2>
+		<hr>
+		<% @posts.each do |post|%>
+		<h3><a href="#"><%= link_to post.title, post %></a></h3>
+		<p class= "date"><%= post.created_at.strftime("%A, %b, %d") %></p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Projects</h2>
+		<hr>
+		<% @projects.each do |project|%>
+		<h3><a href="#"><%= link_to project.title, project %></a></h3>
+		<p class= "date"><%= project.created_at.strftime("%A, %b, %d") %></p>
+		<% end %>
+	</div>
+</div>

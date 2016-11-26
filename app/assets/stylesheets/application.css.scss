@@ -1,0 +1,183 @@
+@import 'normalize';
+@import 'colors';
+
+$dark: #0C0C0C;
+$medium: #BCBCBC;
+$light: #EBEBED;
+$highlight: #B51500;
+$highlight_hover: #C9493F;
+
+/*The width and height properties (and min/max properties) includes content, padding and border, but not the margin
+*/
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ul, li, ol, a {
+	color: $dark;
+}
+h1, h2, h3, h4, h5, nav, .name {
+	font-family: 'Oswald', sans-serif;
+}
+label, p, ul, li, ol, a {
+	line-height: 1.5em;
+	font-weight: light;
+	}
+h1 {
+	font-weight: 600;
+}
+h2 {
+	font-weight: 300;
+	font-size: 1.4em;
+}
+h3 {
+	font-weight: 200;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	line-height: 1.8em;
+}
+label {
+	font-size: 0.9em;
+}
+
+hr {
+	width: 3em;
+	display: block;
+	height: 2px;
+	border: 0;
+	border-top: 2px solid $dark;
+	margin: 2rem 0;
+	}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.skinny_wrapper {
+	width: 80%;
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 1.5em 0 2em 0;
+}
+
+.wrapper_padding {
+	padding: 4em 0;
+}
+
+.clearix:before,
+.clearfix:after {
+	content:" ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+#main_navigation { 
+	padding: 2.5em 5%;
+	border-bottom: 1px solid $light;
+	.name { 
+		font-weight: 700;
+		font-size: 1.2em;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 0;
+		padding: 0;
+		color: $dark;
+		float: left;
+		letter-spacing: 0.15em;
+	 }
+	 nav {
+	 	float: right;
+	 	padding-top: 0.3em;
+	 	a {
+	 		text-decoration: none;
+	 		color: $dark;
+	 		margin: 0.5em;
+	 		font-size: 1em;
+	 	}
+	 }
+ }
+
+ #page_title {
+	font-weight: 200;
+	font-size: 1.75em;
+	text-align: center;
+	padding: 1.5em 1.5em;
+	border-bottom: 1px solid $light;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+#main_footer {
+	padding: 2.5em 5%;
+	border-top: 1px solid $light;
+	.copyright {
+		float: left;
+		font-size: .9em;
+		margin: 0;
+	}
+	nav {
+		float: right;
+		i {
+			color: $dark;
+		}
+	}
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+	width: 100%;
+	max-width: 100%;
+	height: 3em;
+	border: 1px solid $light;
+	margin: 1em 0;
+	padding: .5em 1em .5em 1em;
+}
+
+textarea {
+	min-height: 15em;
+}
+
+input[type="submit"], .button {
+	outline: none;
+	border: none;
+	background: $highlight;
+	color: $white;
+	border-radius: .15em;
+	text-decoration: none;
+	font-size: .9em;
+	padding: 1em 2em;
+	&:hover {
+		color: $white;
+		background: $highlight_hover;
+	}
+}
+
+.project_button {
+	outline: none;
+	border: none;
+	background: $highlight;
+	color: $white;
+	border-radius: .15em;
+	text-decoration: none;
+	font-size: .9em;
+	padding: 1em 2em;
+	&:hover {
+		color: $white;
+		background: $highlight_hover;
+	}
+}
+
+.button_wrapper {
+	margin: 4em 0 3em 0;
+	text-align: center;
+}
+
+ @import 'welcome';
+ @import 'posts_projects';
+ @import 'pygments'

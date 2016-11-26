@@ -1,0 +1,119 @@
+@import 'colors';
+
+#post_wrapper {
+	padding: 3em 0;
+	.post {
+		text-align: center;
+		.date {
+			font-size: 0.65em;
+			color: $medium;
+			letter-spacing: .10em;
+			margin: 0;
+		}
+		h2 {
+			text-transform: uppercase;
+			margin: 0;
+			font-size: 2em;
+			padding: .2em 0;
+			a {
+				color: $dark;
+				text-decoration: none;
+				&:hover {
+					color: $highlight;
+				}
+			}
+		}
+		hr {
+			width: 3em;
+			margin: 3em auto;
+		}
+	}
+}
+
+/*Posts Show*/
+
+#post_show_content {
+	header { 
+		text-align: center;
+		.date {
+			font-size: 0.9em;
+			color: $medium;
+		}
+		h1 {
+			margin: 0;
+		}
+	}
+	hr {
+			margin: 2em auto;
+		}
+}
+
+#share_box {
+	text-align: center;
+	margin: .6em 0 3em 0;	
+		p {
+			padding: 1em 1em;
+			margin: 0;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $dark;
+			font-size: .8em;
+		}
+		i {
+			color: $dark;
+			margin: 1em 0 0 0;
+			padding: 0 1em;
+			&:hover {
+				color: $highlight;
+				/*for java script sharing function*/			
+				cursor: pointer;
+			}
+		}
+	hr {
+		margin: 2em auto;
+	}
+}
+
+
+
+/*Pagination*/
+
+.pagination:before,
+.pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear: box;
+}
+
+.pagination {
+	text-align: center;
+	margin: 0 0 3em 0;
+	a, .previous_page, .current, .next_page {
+		padding: .75em 1em;
+		border-radius: 0.3em;
+		margin: .75em;
+		font-size: .65em;
+		font-weight: 700;
+		text-decoration: none;
+		font-style: none;
+		&:hover {
+			color: $white;
+			background: $highlight;
+		}
+	}
+	.current {
+		background: $highlight;
+		color: $white;
+		font-style: none;
+	}
+	.disabled {
+		color: $medium;
+		&:hover {
+			background: $white;
+			color: $dark;
+		}
+	}
+}

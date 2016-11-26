@@ -1,7 +1,7 @@
 <h1 id="page_title">Projects</h1>
 
 <div id="post_wrapper" class="skinny_wrapper">
-	<% @projects.each do |post| %>
+	<% @projects.each do |project| %>
 		<div class="post">
 			<p class= "date"><%= project.created_at.strftime('%A, %B %D') %></p>
 			<h2><a href="#"><%= link_to project.title, project %></a></h2>

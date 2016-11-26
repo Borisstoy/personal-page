@@ -2798,3 +2798,201 @@ Processing by ProjectsController#show as HTML
 Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 21:52:00 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 21:58:21 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 21:58:34 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 21:59:17 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 21:59:22 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:00:20 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:00:34 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:00:44 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:01:15 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm/edit" for ::1 at 2016-11-26 22:01:16 +0100
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (19.9ms)
+  Rendered projects/edit.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:01:26 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:01:43 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/hammock-banjo-farm/edit" for ::1 at 2016-11-26 22:01:44 +0100
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (1.7ms)
+  Rendered projects/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:03:06 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Boris/Dropbox/projects/code/personal-page/app/views/projects/show.html.erb:19: syntax error, unexpected ',', expecting ')'
+...ppend=( project_path(@project), method: :delete, data: { con...
+...                               ^):
+  
+app/views/projects/show.html.erb:19: syntax error, unexpected ',', expecting ')'
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.0ms)
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:03:30 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:04:13 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/hammock-banjo-farm" for ::1 at 2016-11-26 22:04:32 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"hammock-banjo-farm"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ? ORDER BY "projects"."id" ASC LIMIT ?[0m  [["slug", "hammock-banjo-farm"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 22:04:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/vaporware-hoodie-tattooed" for ::1 at 2016-11-26 22:04:36 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"vaporware-hoodie-tattooed"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ? ORDER BY "posts"."id" ASC LIMIT ?[0m  [["slug", "vaporware-hoodie-tattooed"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (376.3ms)
+Completed 200 OK in 401ms (Views: 398.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/vaporware-hoodie-tattooed" for ::1 at 2016-11-26 22:04:48 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"vaporware-hoodie-tattooed"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ? ORDER BY "posts"."id" ASC LIMIT ?[0m  [["slug", "vaporware-hoodie-tattooed"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (0.2ms)
+  Rendered posts/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+

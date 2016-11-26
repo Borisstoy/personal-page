@@ -21,9 +21,12 @@
 	    <a onclick="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
 	</div>
 
-<%= render 'disqus' %>
+	<%= render 'disqus' %>
 
+	<br>
+
+	<%= link_to "Edit", edit_post_path(@post) %>
+	<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
 </div>
 
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
+

@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 	resources :contacts, only: [:new, :create]
 	get 'welcome/index'
 	root 'welcome#index'
+
+	# trick to avoid routing error when people do : /whatever_not_allowed
+	get '*path' => redirect('/')
 end

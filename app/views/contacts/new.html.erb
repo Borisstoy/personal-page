@@ -1,4 +1,4 @@
-<h1 id="page_title">Contact</h1>
+<h1 id="page_title">Get in touch</h1>
 
 <div class= "skinny_wrapper wrapper _padding">
 	<%= form_for @contact do |f| %>
@@ -15,8 +15,9 @@
 		<%= f.label :message %><br>
 		<%= f.text_area :message, as: :text %>
 
+		<!-- prevents from spam -->
 		<div class="hidden">
-			<%= f.label :message %><br>
+			<%= f.label :nickname %><br>
 			<%= f.text_field :nickname, hint: 'leave this field blank' %>
 		</div>
 

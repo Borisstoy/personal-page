@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 	get 'welcome/index'
 	root 'welcome#index'
 
-	# trick to avoid routing error when people do : /whatever_not_allowed
-	get '*path' => redirect('/')
+	# trick to avoid routing error when people do : /whatever_not_allowed by routes
+	# get '*path' => redirect('/')
 end

@@ -74,7 +74,19 @@
 	}
 }
 
-
+#admin_links{
+	text-align: center;
+	padding: 1em 0;
+	a {
+		color: $dark;
+		font-size: 1em;
+		text-decoration: none;
+		margin: 0 1em 0 1em;
+		&:hover{
+			color: $highlight;
+		}
+	}
+}
 
 /*Pagination*/
 

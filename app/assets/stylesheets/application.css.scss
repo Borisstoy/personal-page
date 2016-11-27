@@ -78,6 +78,12 @@ hr {
 	clear: both;
 }
 
+/* applies to contact form */
+/* prevent from bots, will reject*/
+.hidden { 
+	display: none;
+}
+
 #main_navigation { 
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $light;

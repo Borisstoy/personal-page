@@ -3006,3 +3006,11 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 248ms (Views: 232.2ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/contacts/new" for ::1 at 2016-11-27 10:47:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 311ms (Views: 295.9ms | ActiveRecord: 0.0ms)
+
+

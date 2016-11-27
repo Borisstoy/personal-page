@@ -16,6 +16,7 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'friendly_id', '~> 5.1'
 gem 'mislav-will_paginate', '~> 2.3', '>= 2.3.10'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
+gem 'mail_form', '~> 1.6'
 
 group :development, :test do
   gem 'byebug', platform: :mri

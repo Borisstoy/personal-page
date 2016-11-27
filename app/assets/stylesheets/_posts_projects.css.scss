@@ -77,8 +77,11 @@
 #admin_links{
 	text-align: center;
 	padding: 1em 0;
+	border-bottom: 1px solid $light;
+	border-top: 1px solid $light;
 	a {
 		color: $dark;
+		font-weight: 700;
 		font-size: 1em;
 		text-decoration: none;
 		margin: 0 1em 0 1em;

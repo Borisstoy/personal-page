@@ -7,6 +7,11 @@ $light: #EBEBED;
 $highlight: #B51500;
 $highlight_hover: #C9493F;
 
+/*IMPORTANT: prevents content to move when page's scroll bar appears*/
+html {
+  overflow-y: scroll;
+}
+
 /*The width and height properties (and min/max properties) includes content, padding and border, but not the margin
 */
 * {
@@ -61,16 +66,16 @@ hr {
 	width: 80%;
 	max-width: 760px;
 	margin: 0 auto;
-	padding: 1.5em 0 2em 0;
 }
 
 .wrapper_padding {
 	padding: 4em 0;
 }
 
+/* adding the clearfix: make sure the wrapper stays around the floated items. */
 .clearix:before,
 .clearfix:after {
-	content:" ";
+	content: " ";
 	display: table;
 }
 
@@ -86,27 +91,26 @@ hr {
 
 .notice, .alert {
 	text-align: center;
-	padding: 1em 0;
+	padding: 1em 0 2em 0;
 	border-bottom: 1px solid $light;
 }
 
 #main_navigation { 
-	padding: 2.5em 5%;
+	padding: 2.3em 5%;
 	border-bottom: 1px solid $light;
 	.name { 
 		font-weight: 700;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		text-decoration: none;
 		text-transform: uppercase;
 		border: 0;
 		padding: 0;
 		color: $dark;
 		float: left;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.10em;
 	 }
 	 nav {
 	 	float: right;
-	 	padding-top: 0.3em;
 	 	a {
 	 		text-decoration: none;
 	 		color: $dark;

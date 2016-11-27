@@ -6425,3 +6425,391 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/projects/new" for ::1 at 2016-11-27 16:18:37 +0100
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.4ms)
+  Rendered projects/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:18: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...r.append=( if user_signed_in? );@output_buffer.safe_append='
+...                               ^
+/Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+... Out" destroy_user_session_path, method: :delete );@output_b...
+...                               ^
+/Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;		 end 
+         		    ^
+/Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:45: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/layouts/application.html.erb:18: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.7ms)
+Started GET "/projects/new" for ::1 at 2016-11-27 16:18:56 +0100
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.2ms)
+  Rendered projects/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+... Out" destroy_user_session_path, method: :delete );@output_b...
+...                               ^):
+  
+app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+Started GET "/projects/new" for ::1 at 2016-11-27 16:19:06 +0100
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.9ms)
+  Rendered projects/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 48ms (Views: 42.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:19:09 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-11-27 16:19:45 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qh/BXQgAzI4Ha1lClopOZPtFUqljUXco00q16HSrZ0aXGxDGmLLX+++EmgvmavuZSEDdtwNVmf1xiPcNFnRHRg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:19:45 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-27 16:19:51 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-11-27 16:19:55 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8VKdKOHsJpMZbjdpnXh5nn1+ZQtJ2IX0QhcyB7MoABwRUhSnLwDXBA7AyTN5nU0ikHtH1mnxbrvpKHLtCXnOrA==", "user"=>{"email"=>"boris.stoy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "boris.stoy@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", 2016-11-27 15:19:56 UTC], ["updated_at", 2016-11-27 15:19:56 UTC], ["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 2], ["current_sign_in_at", 2016-11-27 15:19:56 UTC], ["updated_at", 2016-11-27 15:19:56 UTC], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 254ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:19:56 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 69.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-27 16:47:34 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:47:34 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-11-27 16:47:37 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"97YJ3y/GG+w4RCd8bbWcKk86aVawpFeufkOZVxQSpRaHioq1aRFS5EjQN/vCqNJEjdBp7hUGYSwOsUC8TeHdjg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", 2016-11-27 15:47:37 UTC], ["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:47:37 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-27 16:47:42 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-11-27 16:47:56 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hL1Uk97nGBwwq8/SidXU/g/wgpwgSaysrRxa3DrSxZahKixvK/sypnbOJFvHy8bqeMGf3HHUFX55tyZl5XrIEw==", "user"=>{"email"=>"boris.stoy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "boris.stoy@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-11-27 15:47:56 UTC], ["last_sign_in_at", 2016-11-27 15:19:56 UTC], ["sign_in_count", 3], ["updated_at", 2016-11-27 15:47:56 UTC], ["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 218ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:47:56 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 55.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:54:49 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326952485760 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 224ms (Views: 220.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-11-27 16:54:53 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IedFunRsQKanLCB7SV/vqhHrM4M/dDxRKAguXLc2tI0zh26fscmSQEuDzHsXBtBmbMLc8RrZnQEsCH0240pEwg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:54:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:55:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326919106740 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+Completed 200 OK in 219ms (Views: 216.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-27 16:55:24 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-11-27 16:55:26 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uHlaEkfkd8Mpsx5J0KoW9bDn0iEYCEA23+OhkX7giZyh+6ug7SmZqYc0kIg4+UMNnKOsaJnNdR03cL+EuHLirA==", "user"=>{"email"=>"boris.stoy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "boris.stoy@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-11-27 15:55:26 UTC], ["last_sign_in_at", 2016-11-27 15:47:56 UTC], ["sign_in_count", 4], ["updated_at", 2016-11-27 15:55:26 UTC], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 226ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:55:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 50.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:55:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326948743020 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 246ms (Views: 242.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-11-27 16:55:35 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kVS3jYGEKqBXGSssxe9xOzmoE2iTy1eSypgJ5gNLhTalAO5vm1N7PnbWh6KO+7zlPMRoVZBg8pWn/C+xEzR70w=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:55:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 62ms (Views: 57.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:56:24 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/_colors.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.css.scss to /Users/Boris/Dropbox/projects/code/personal-page/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb__936188323496163407_70326873268660 at /Users/Boris/Dropbox/projects/code/personal-page/app/views/layouts/application.html.erb:8)
+Completed 200 OK in 249ms (Views: 245.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-27 16:56:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-27 16:56:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-11-27 16:56:33 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S41sUpzs+2UblPNU2mdeHKw2xvJhHWxqhDV1v3KlaeSCBjAGLFuKsyYhngkGo/8KGelOmUeFGPjxbroHi7BgSg==", "user"=>{"email"=>"boris.stoy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "boris.stoy@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-11-27 15:56:33 UTC], ["last_sign_in_at", 2016-11-27 15:55:26 UTC], ["sign_in_count", 5], ["updated_at", 2016-11-27 15:56:33 UTC], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 237ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 16:56:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 58.6ms | ActiveRecord: 1.1ms)
+
+

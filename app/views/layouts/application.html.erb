@@ -17,7 +17,15 @@
 		<%= link_to "Contact", new_contact_path %>
 	</nav>
 	</header>
-	
+
+	<!-- will show if there's a notice or an alert -->
+	<!-- related to gem devise -->
+	<% if notice %>
+		<p class="notice"><%= notice %></p>
+	<% elsif notice %>
+		<p class="alert"><%= alert %></p>
+	<% end %>
+
     <%= yield %>
 
     <footer id="main_footer">

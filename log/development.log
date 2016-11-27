@@ -3714,3 +3714,295 @@ Processing by ContactsController#create as HTML
 Completed 200 OK in 235ms (Views: 219.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/contacts" for ::1 at 2016-11-27 11:57:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered collection of /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (31.4ms)
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.6ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (413.2ms)
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:04:23 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 41ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-11-27 12:04:28 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bpVjiJ7jGYhKPZZhyEj9+vnXqkAcTZdpPqeiDFGe2cVTkbITDlEC/aLSVSi4qEgHStIlXnxJebycZeDpM0H5xQ==", "contact"=>{"name"=>"Test", "email"=>"test@test.com", "message"=>"tests", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 12:07:17 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (101.5ms)
+Completed 200 OK in 1139ms (Views: 1061.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:07:20 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 195ms (Views: 168.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 12:07:21 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 104ms (Views: 94.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:07:23 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 165ms (Views: 157.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:16:23 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 178ms (Views: 160.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (7.7ms)
+MailForm::Notifier#contact: processed outbound mail in 182.4ms
+Sent mail to boris.stoy@gmail.com (19.6ms)
+Date: Sun, 27 Nov 2016 12:19:03 +0100
+From: Boris <boris.stoy@gmail.com>
+To: boris.stoy@gmail.com
+Message-ID: <583ac127aeb7c_90983fe2e6433a389598c@Boriss-MacBook-Pro.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Boris</p>
+
+  <p><b>Email:</b>
+  boris.stoy@gmail.com</p>
+
+  <p><b>Message:</b>
+  test</p>
+
+
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (0.6ms)
+MailForm::Notifier#contact: processed outbound mail in 37.0ms
+Sent mail to boris.stoy@gmail.com (3.7ms)
+Date: Sun, 27 Nov 2016 12:19:32 +0100
+From: =?UTF-8?B?Sm9zw6k=?= <jose@email.com>
+To: boris.stoy@gmail.com
+Message-ID: <583ac1447e9d7_90983fe2e6433a389609@Boriss-MacBook-Pro.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<h4 style=3D"text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Jos=C3=A9</p>
+
+  <p><b>Email:</b>
+  jose@email.com</p>
+
+  <p><b>Message:</b>
+  Cool!</p>
+
+
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (0.6ms)
+MailForm::Notifier#contact: processed outbound mail in 37.0ms
+Sent mail to boris.stoy@gmail.com (3.8ms)
+Date: Sun, 27 Nov 2016 12:29:58 +0100
+From: =?UTF-8?B?Sm9zw6k=?= <jose@email.com>
+To: boris.stoy@gmail.com
+Message-ID: <583ac3b658566_90983fe2e6433a3896127@Boriss-MacBook-Pro.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<h4 style=3D"text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Jos=C3=A9</p>
+
+  <p><b>Email:</b>
+  jose@email.com</p>
+
+  <p><b>Message:</b>
+  Cool!</p>
+
+
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:31:34 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-11-27 12:31:41 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnLNZ862N80osGBx7ZV/rz+Ra++G+ev2QGyCubaDA6MXdhz8XgQsuMBfoziddcpSjJTk8eb9BSPirsBc1Fwjow==", "contact"=>{"name"=>"test", "email"=>"test@test.com", "message"=>"ttes", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (0.5ms)
+MailForm::Notifier#contact: processed outbound mail in 34.8ms
+Sent mail to boris.stoy@gmail.com (3.5ms)
+Date: Sun, 27 Nov 2016 12:34:15 +0100
+From: =?UTF-8?B?Sm9zw6k=?= <jose@email.com>
+To: boris.stoy@gmail.com
+Message-ID: <583ac4b75f50e_90983fe2e6433a3896241@Boriss-MacBook-Pro.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<h4 style=3D"text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Jos=C3=A9</p>
+
+  <p><b>Email:</b>
+  jose@email.com</p>
+
+  <p><b>Message:</b>
+  Cool!</p>
+
+
+Started GET "/contacts" for ::1 at 2016-11-27 12:34:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (9.1ms)
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.8ms)
+  Rendering /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Boris/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.7ms)
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:34:34 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-11-27 12:34:43 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ss/ysYk2xDzkTNC5hLhCbZtrTKf14/cYv2irNjCGRJqPyyMqGYTfSQyjE/D0WPeQKG7DuZXnGc0dqunTUllkmg==", "contact"=>{"name"=>"Test", "email"=>"test@test.com", "message"=>"test", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:39:18 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-27 12:39:20 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 63ms (Views: 51.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/contacts/new" for ::1 at 2016-11-27 12:39:22 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+

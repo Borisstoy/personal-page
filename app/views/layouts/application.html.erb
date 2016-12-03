@@ -3,7 +3,13 @@
   <head>
     <title>Boris Stoyanov-Brignoli - Personal Page</title>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+	<!-- for mobile display, input the following: -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- for responsive design, we'll need some JS / JQ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -11,14 +17,16 @@
   <body>
 	<header id="main_navigation" class= "clearfix">
 	<%= link_to "Boris Stoyanov-Brignoli", root_path, class:"name" %>
-	<nav>
-		<%= link_to "Articles", posts_path %>
-		<%= link_to "Projects", projects_path %>
-		<%= link_to "Contact", new_contact_path %>
-		<% if user_signed_in? %>
-			<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-		<% end %>
-	</nav>
+
+		<a href="#" class="menu"><i class="fa fa-bars"></i></a>
+		<nav id="main_nav">
+			<%= link_to "Articles", posts_path %>
+			<%= link_to "Projects", projects_path %>
+			<%= link_to "Contact", new_contact_path %>
+			<% if user_signed_in? %>
+				<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+			<% end %>
+		</nav>
 	</header>
 
 	<!-- will show if there's a notice or an alert -->

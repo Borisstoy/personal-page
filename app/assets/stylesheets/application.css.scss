@@ -1,5 +1,8 @@
-@import 'normalize';
 @import 'colors';
+@import 'normalize';
+@import 'welcome';
+@import 'posts_projects';
+@import 'pygments';
 
 $dark: #0C0C0C;
 $medium: #BCBCBC;
@@ -93,6 +96,10 @@ hr {
 	text-align: center;
 	padding: 1em 0 2em 0;
 	border-bottom: 1px solid $light;
+}
+
+.menu {
+	display: none;
 }
 
 #main_navigation { 
@@ -194,6 +201,37 @@ input[type="submit"], .button {
 	text-align: center;
 }
 
- @import 'welcome';
- @import 'posts_projects';
- @import 'pygments'
+
+
+@media only screen and (max-width: 768px) {
+	#main_nav {
+		/*under 768px width, we hide the main nav*/
+		display: none;
+	}
+	#main_nav.active {
+		display: block;
+		width: 100%;
+		a {
+			display: block;
+			color: $dark;
+			padding: 1.2em 0 1em 0;
+			border-bottom: 1px solid #E9E9E9;
+			/*removes border for last elements*/
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	/*pops the menu bar in the main nav*/
+	.menu {
+		display: block;
+		float: right;
+		margin: 0 auto 0 auto;
+		i {
+			font-size: 1.5em;
+			color: $dark;
+			padding-top: .5em;
+		}
+	}
+}
+

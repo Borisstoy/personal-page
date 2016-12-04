@@ -115,16 +115,22 @@ hr {
 		color: $dark;
 		float: left;
 		letter-spacing: 0.10em;
-	 }
-	 nav {
-	 	float: right;
-	 	a {
-	 		text-decoration: none;
-	 		color: $dark;
-	 		margin: 0.5em;
-	 		font-size: 1em;
-	 	}
-	 }
+	}
+	nav {
+		float: right;
+		ul {
+			list-style: none;
+			li {
+				display: inline;
+			}
+				a {
+				text-decoration: none;
+				color: $dark;
+				margin: 0.5em;
+				font-size: 1em;
+				}
+		}
+	}
  }
 
  #page_title {
@@ -215,7 +221,7 @@ input[type="submit"], .button {
 			display: block;
 			color: $dark;
 			padding: 1.2em 0 1em 0;
-			border-bottom: 1px solid #E9E9E9;
+			border-bottom: 1px solid #E9E9E9 !important;
 			/*removes border for last elements*/
 			&:last-child {
 				border-bottom: none;

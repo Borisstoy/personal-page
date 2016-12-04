@@ -9,7 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- for responsive design, we'll need some JS / JQ -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/main.js"></script>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -20,12 +19,14 @@
 
 		<a href="#" class="menu"><i class="fa fa-bars"></i></a>
 		<nav id="main_nav">
-			<%= link_to "Articles", posts_path %>
-			<%= link_to "Projects", projects_path %>
-			<%= link_to "Contact", new_contact_path %>
-			<% if user_signed_in? %>
-				<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-			<% end %>
+			<ul>
+				<li><%= link_to "Articles", posts_path %></li>
+				<li><%= link_to "Projects", projects_path %></li>
+				<li><%= link_to "Contact", new_contact_path %></li>
+				<% if user_signed_in? %>
+					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+				<% end %>
+			</ul>
 		</nav>
 	</header>
 
@@ -45,5 +46,20 @@
 			<a href="https://www.linkedin.com/in/boris-stoyanov-brignoli-49907545?trk=nav_responsive_tab_profile_pic" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 		</nav>
 	</footer>
+
+	<script>
+		$(document).ready(function() {
+	
+			$('.menu').click(function(e) {
+				e.stopPropagation();
+				$('#main_nav').toggleClass('active');
+			});
+
+			$(document).click(function() {
+				$('#main_nav').removeClass('active');
+			});
+
+		});
+	</script>
   </body>
 </html>

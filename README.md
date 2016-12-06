@@ -1,24 +1,38 @@
-# README
+Requirements
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Users stories
+•	User can create, edit, update, delete posts / projects.
+•	Other users can only view
+•	Set up CRUD
 
-Things you may want to cover:
+Features
+•	pagination
+•	devise
+•	email notification (sendgrid)
+•	contact form
+•	markdown / synthax highlighting
+•	comments
 
-* Ruby version
+DATA
 
-* System dependencies
+POST has_many :episodes
+•	title:string
+•	content:string
+•	title
+•	description
 
-* Configuration
+PROJECT belongs_to :podcast
+•	title:string
+•	description:text
+•	link:string (button)
 
-* Database creation
+USER belongs_to :podcast
+•	use devise for this
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Pages
+•	Home 
+•	Posts#index
+•	Posts#show
+•	Projects#index
+•	Projects#show
+•	Contact 
